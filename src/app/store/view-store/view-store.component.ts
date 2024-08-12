@@ -6,8 +6,6 @@ import StoreRepository from '../../shared/repository/store-repository';
 
 @Component({
   selector: 'app-view-store',
-  standalone: true,
-  imports: [],
   templateUrl: './view-store.component.html',
   styleUrl: './view-store.component.css'
 })

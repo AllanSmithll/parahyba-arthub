@@ -6,12 +6,14 @@ import { MaterialAngularModule } from '../material-angular/material-angular.modu
 import { CardStoreComponent } from './card-store/card-store.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
+    CardStoreComponent,
     ListStoreComponent,
     ViewStoreComponent,
-    CardStoreComponent,
+
+  ],
+  imports: [
+    CommonModule,
     MaterialAngularModule
   ],
   exports:[
