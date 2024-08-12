@@ -5,8 +5,6 @@ import { MaterialAngularModule } from '../../material-angular/material-angular.m
 
 @Component({
   selector: 'card-store',
-  standalone:true,
-  imports:[MaterialAngularModule],
   templateUrl: './card-store.component.html',
   styleUrl: './card-store.component.css'
 })
