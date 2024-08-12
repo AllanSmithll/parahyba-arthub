@@ -1,0 +1,16 @@
+.store-card {
+    cursor: pointer;
+    max-width: 300px;
+    margin: 16px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .store-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
