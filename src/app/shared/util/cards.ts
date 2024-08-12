@@ -1,3 +1,4 @@
+/*
 import item from "./shared/models"
 
 itens: Item[] = [
@@ -62,4 +63,4 @@ itens: Item[] = [
       valor: 'R$ 12,00'
     }
   ];
-  
+  */

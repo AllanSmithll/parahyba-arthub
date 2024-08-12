@@ -14,5 +14,5 @@ function getProjectcard({valor,imagem,nome}){
 }
 
 const projectContent = itens.map((f) => getProjectcard(f)).join('')
-const projectConteiner = document.querySelector('.cardapio')
+const projectConteiner = document.querySelector('.item')
 projectConteiner.innerHTML = projectContent
