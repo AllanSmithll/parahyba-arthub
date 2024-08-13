@@ -1,0 +1,19 @@
+<form class="main-form" (ngSubmit)="login()">
+    <div class="main-card">
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="text" id="email" [(ngModel)]="email" placeholder="Email" name="email">
+      </div>
+     
+      <div class="form-group">
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" [(ngModel)]="password" placeholder="Senha"  name="senha">
+      </div>
+      <br>
+  
+      <br>
+      <button type="submit">Criar usuário</button>
+    </div>
+    </form>
+   
+    
