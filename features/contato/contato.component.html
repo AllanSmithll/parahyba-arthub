@@ -1,0 +1,75 @@
+<!-- contato.component.html -->
+<app-nav-bar></app-nav-bar>
+
+  <div class="estrutura">
+    <!-- (ngSubmit)="onSubmit()" #contatoForm="ngForm" -->
+    <form >
+      <div class="title-form">Entre em contato conosco! <i class="fas fa-heart"></i></div>
+      <br>
+
+      <label for="firstName" class="form-label">Primeiro nome:</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Digite um nome..." required ngModel>
+      <br><br>
+
+      <label for="secundName" class="form-label">Segundo nome:</label>
+      <input type="text" class="form-control" id="secundName" name="secundName" placeholder="Digite um sobrenome..." required ngModel>
+      <br><br>
+
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required ngModel>
+      <br><br>
+
+      <span>Como você nos conheceu?</span>
+      <br>
+      <div>
+        <input type="radio" name="conhecer" value="redes" ngModel>
+        <label for="redes">Redes Sociais</label>
+        <br>
+        <input type="radio" name="conhecer" value="indicacao" ngModel>
+        <label for="indicacao">Indicação de um amigo</label>
+        <br>
+        <input type="radio" name="conhecer" value="outro" ngModel>
+        <label for="outro">Outro</label>
+      </div>
+      <br>
+
+      <div>Qual a sua preferência de horário?</div>
+      <div>
+        <input type="checkbox" name="horario" value="14h" id="inicio-turno" ngModel>
+        <label for="inicio-turno">14h às 16h</label>
+      </div>
+      <div>
+        <input type="checkbox" name="horario" value="16h" id="meio-turno" ngModel>
+        <label for="meio-turno">16h às 18h</label>
+      </div>
+      <div>
+        <input type="checkbox" name="horario" value="18h" id="fim-turno" ngModel>
+        <label for="fim-turno">18h às 20h</label>
+      </div>
+      <br>
+
+      <label>Você gostaria de receber e-mails com nossas novidades?</label>
+      <select id="novidades" name="nov" ngModel>
+        <option value=""></option>
+        <option value="sim">Sim, quero receber!</option>
+        <option value="nao">Não quero receber emails.</option>
+      </select>
+      <br><br>
+
+      <label for="mensagem" class="form-label">Mensagem:</label>
+      <br>
+      <textarea class="form-control" id="mensagem" cols="20" rows="6" placeholder="Digite sua mensagem..." required ngModel></textarea>
+      <br>
+
+      <button type="submit" class="btn btn-primary">Enviar mensagem!</button>
+      <button type="reset" class="btn btn-secondary">Limpar formulário</button>
+    </form>
+  </div>
+
+<footer>
+  <h2>
+    <a routerLink="/" href='#'><i class="fa-solid fa-shop"></i> PB ArtHub </a>
+  </h2>
+  <p class="copyright">&copy; Copyright - 2024</p>
+  <p>Av. Primeiro de Maio, 720 - Jaguaribe, João Pessoa - PB, 58015-435<br>Fale conosco: contato:pbarthub.com.br </p>
+</footer>
