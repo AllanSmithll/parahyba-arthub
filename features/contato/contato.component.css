@@ -1,0 +1,197 @@
+/* CSS DO ÍNDICE */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  ul,nav{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
+  }
+  
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 40px 60px;
+    background: #fff;
+    /*font-size: 40px;*/
+  }
+  
+  header h2{
+    text-transform: unppercase;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Grape Nuts', cursive;
+  }
+  
+  header nav{
+    display: flex;  
+  }
+  
+  header li{
+    margin: 0 14px;
+  }
+  
+  header li:first-child{
+    margin-left: 10px;
+  }
+  header li:last-child{
+    margin-right: 10px;
+  }
+  
+  nav li :hover {
+    color: #D3D3D3;
+  }
+  
+  nav li :active {
+    color: #E9967A;
+  }
+  
+  @media(max-width: 1000px){
+    header{
+      padding: 20px 50px;
+    }  
+  }
+  
+  @media (max-width: 700px){
+    header{
+      flex-direction: column;
+    }
+    header h2{
+      margin-bottom: 15px;
+    }
+    header nav li{
+      margin: 0 7px;
+    }
+  }
+  
+  /*CSS da estrutura */
+  
+  .estrutura{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 190px 0px 90px 0;
+    background: #D3D3D3;
+    background-image: url(/src/app/assets/Imagens/fundocafe.jpg);
+  }
+  
+  
+  
+  /* Formulário */
+  
+  form {
+    background-color: #292929;
+    border-radius: 20px;
+    font-size: 22px;
+    color: white;
+    box-sizing: border-box;
+    padding: 40px 100px 40px 100px;
+    width: auto;
+    margin: 5px;
+  }
+  
+  .title-form {
+    color: #eee;
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .form-control{
+    background-color: #eee;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 18px;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 0 4px 0;
+    width: 100%;
+  }
+  
+  .botao {
+    background-color: #91533e;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 49%;
+    animation: muda-cor 8s infinite;
+  }
+  
+  .botao:active {
+    background-color: #eee;
+  }
+  
+  /* Animação */
+  
+    @keyframes muda-cor {
+      0%, 100% {
+        background-color: #E9967A;
+      }
+      25%, 75% {
+        background-color: #91533e;
+      }
+      50% {
+        background-color: #cd8888;
+      }
+    }
+  
+  
+  
+  /*CSS do Footer */
+  
+  footer {
+      text-align: center;
+      background-color:white;
+      padding: 40px 60px 60px 40px;
+      margin: 0;
+  }
+  
+  .copyright {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  footer p{
+    font-size: 20px;
+    padding: 10px;
+    
+  }
+  
