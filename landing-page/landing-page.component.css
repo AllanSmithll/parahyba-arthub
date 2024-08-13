@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  ul,nav{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
+  }
+
+  /*HEADER*/
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 40px 60px;
+    background: #fff;
+  }
+
+  header h2{
+    text-transform: unppercase;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Grape Nuts', cursive;
+  }
+
+  header nav{
+    display: flex;
+  }
+
+  header li{
+    margin: 0 14px;
+  }
+
+  header li:first-child{
+    margin-left: 10px;
+  }
+  header li:last-child{
+    margin-right: 10px;
+  }
+
+  @media(max-width: 1000px){
+    header{
+      padding: 20px 50px;
+    }
+  }
+
+  @media (max-width: 700px){
+    header{
+      flex-direction: column;
+    }
+    header h2{
+      margin-bottom: 15px;
+    }
+    header nav li{
+      margin: 0 7px;
+    }
+  }
+
+  nav li :hover {
+    color: #996100;
+  }
+
+  nav li :active {
+    color: #E9967A;
+  }
+
+  /*RESTO*/
+
+  .inicio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 190px 70px 70px 60px;
+    background: #f2f2f2;
+  }
+
+  .inicio li{
+    padding: 10px;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+  }
+
+  .inicio-esquerda{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inicio-direita{
+    flex-basis: 50%;
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/pb301.jpg);
+  }
+
+  .inicio h1{
+    font-size: 70px;
+    padding: 0 0 20px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.1;
+  }
+
+  .inicio h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-weight: 100;
+
+  }
+
+  @media (max-width: 1000px){
+    .inicio-direita, .inicio-esquerda{
+      flex-basis: 100%;
+    }
+    .inicio li{
+      padding: 8px;
+    }
+  }
+
+  @media (max-widht: 700px){
+    .inicio li{
+      height: 400px;
+    }
+  }
+
+  .sobre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 70px 90px 60px;
+  }
+
+  .sobre li{
+    padding: 0;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+  }
+
+  .sobre-direita{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d1f0ff;
+  }
+
+  .sobre-direita h1{
+    padding: 0 0 25px;
+    font-size: 50px;
+    font-weight: 100px;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  .sobre-direita h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0px 180px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .sobre-direita h3 p{
+  text-align: center;
+  }
+
+  .sobre-esquerda{
+    flex-basis: 50%;
+    background-image: url(https://paraiba.pb.gov.br/noticias/volume-de-negocios-do-artesanato-paraibano-na-20a-fenearte-cresce-92/16_07_19-resultado-fenearte-pe-foto-jose-marques-2.jpg/@@images/86658e1a-504e-4bcb-93a5-939d1e390a21.jpeg);
+  }
+
+  @media (max-width: 1500px){
+    .sobre-direita h3{
+      padding: 0 90px;
+    }
+  }
+
+
+  @media (max-width: 1300px){
+    .sobre-direita h3{
+      padding: 0 70px;
+    }
+  }
+
+  @media (max-width: 1000px){
+    .sobre-esquerda,
+    .sobre-direita{
+      flex-basis: 100%;
+    }
+    .sobre li{
+      padding: 8px;
+      margin: 10px;
+    }
+    .sobre-direita h3{
+      padding: 0 80px;
+    }
+  }
+
+  @media (max-width: 700px){
+    .sobre-direita h3{
+      padding: 0 20px;
+    }
+    .sobre li{
+      height: 400px;
+    }
+  }
+
+  /*CHAT FIXO*/
+
+  .fixo{
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    width: 170px;
+  }
+
+  /*CSS do Footer */
+
+  footer {
+      text-align: center;
+      background-color:white;
+      padding: 40px 60px 60px 40px;
+      margin: 0;
+  }
+
+  .copyright {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer p{
+    font-size: 20px;
+    padding: 10px;
+
+  }
