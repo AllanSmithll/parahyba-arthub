@@ -1,27 +1,47 @@
-# ParahybaArthub
+# Parahyba Arthub
+**Parahyba Arthub** é uma plataforma de comércio virtual dedicada à venda e promoção de produtos artesanais da Paraíba. O protejo permite que os artesãos, além de venderem seus artesanatos, gerenciem suas lojas, administrem seu estoque, definam formas de pagamento e muito mais!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Objetivo
+Este projeto foi desenvolvido no intuito da obtenção da nota da disciplina de Gerência de Projetos de Software (GPS) e Comércio Eletrônico (CE), cadeiras do curso de [Sistemas para Internet](https://estudante.ifpb.edu.br/cursos/39/).
 
-## Development server
+## Funcionalidades
+- Cadastro de Lojas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Divulgação de Produtos
 
-## Code scaffolding
+- Sistema de Pagamento
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Controle de Estoque
+ 
 
-## Build
+## Execultar
+Para executar o projeto Parahyba Arthub em seu ambiente local, siga os passos abaixo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### 1. Clone o Repositório:
 
-## Running unit tests
+```bash
+git clone https://github.com/seu-usuario/parahyba-arthub.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### 2. Instale as Dependências:
 
-## Running end-to-end tests
+Navegue até a pasta do projeto e instale as dependências usando o npm:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash 
 
-## Further help
+cd parahyba-arthub
+npm install
+Inicie o Servidor:
+Inicie o servidor de desenvolvimento:
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### 3. Inicialização:
+Inicialize o projeto através do seguinte comando:
+```bash
+ng serve
+```
+
+#### 3. Acersso:
+Abra seu navegador e acesse http://localhost:4200 para visualizar a aplicação.
+
+## Conclussões Finais
