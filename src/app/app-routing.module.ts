@@ -6,6 +6,7 @@ import { CardapioComponent } from './features/cardapio/cardapio.component';
 import { ContatoComponent } from './features/contato/contato.component';
 import { ListStoreComponent } from './store/list-store/list-store.component';
 import { ViewStoreComponent } from './store/view-store/view-store.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
     {
@@ -25,6 +26,9 @@ const routes: Routes = [
     },
     {
         path: "loja/:id", component: ViewStoreComponent
+    },
+    {
+        path: "cadastro", component: RegisterComponent
     }
 ];
 

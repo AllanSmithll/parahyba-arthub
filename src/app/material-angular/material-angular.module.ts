@@ -4,7 +4,9 @@ import {MatCardModule} from '@angular/material/card';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterLink } from '@angular/router';
-
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [],
@@ -13,7 +15,10 @@ import { RouterLink } from '@angular/router';
     BrowserModule,
     RouterLink,
     MatCardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatSelectModule,
   ],
   exports: [
     CommonModule,
