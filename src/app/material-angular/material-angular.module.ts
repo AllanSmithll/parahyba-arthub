@@ -4,9 +4,12 @@ import {MatCardModule} from '@angular/material/card';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterLink } from '@angular/router';
+
+
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatButton } from '@angular/material/button';
 
 @NgModule({
   declarations: [],
@@ -16,6 +19,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     RouterLink,
     MatCardModule,
     BrowserAnimationsModule,
+    MatButton,
     MatFormFieldModule, 
     MatInputModule, 
     MatSelectModule,
@@ -25,6 +29,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserModule,
     RouterLink,
     MatCardModule,
+    MatButton,
     BrowserAnimationsModule
   ]
 })

@@ -10,6 +10,9 @@ export default class Store {
     description: string = "";
 
     items: Item[] = [];
+    followers: number = 0;
+    
+    shopSince: Date = new Date();
 
     constructor(name: string, cnpj: string, address: string, image: string, description: string, items: Item[] = [],id:string="") {
         this.id = (id==""?this.generateId(): id);

@@ -1,0 +1,203 @@
+* {
+  cursor: default;
+}
+
+.store-view {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  /* Fonte moderna e legível */
+}
+
+
+
+.store-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://cdn.leonardo.ai/users/99190138-8262-491e-a0dd-3a6a25249df7/generations/fb4de504-9200-4689-9764-3c035a3dd2d9/Default_an_intricate_and_monocromatic_illustration_featuring_2.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.store-image img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 75px;
+  margin-bottom: 8px;
+}
+.store-name-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-box button{
+  width: 5rem;
+  padding: 10px;
+  margin: 0 10px ;
+  background-color: #ffffff;
+
+}
+.store-info {
+  flex-grow: 1;
+  margin-left: 16px;
+}
+
+.store-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  /* Aumentado para maior destaque */
+  font-weight: 700;
+  /* Mais negrito para destaque */
+  color: #999696;
+  /* Cor mais escura para contraste */
+}
+
+#tile-store {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45rem;
+
+}
+
+.store-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.store-stats span {
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+  /* Um pouco maior para legibilidade */
+  color: #ffffff;
+  /* Tom mais escuro */
+}
+
+.store-tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  /* Ajustado para clareza */
+}
+
+.recommended-section {
+  margin-top: 16px;
+}
+
+.recommended-section h1 {
+  font-size: 1.5rem;
+  /* Maior para melhor hierarquia visual */
+  margin-bottom: 8px;
+  font-weight: 600;
+  /* Semi-negrito */
+}
+
+.recommended-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  flex: 0 1 calc(33.33% - 16px);
+  margin-bottom: 16px;
+  transition: transform 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adiciona sombra ao hover */
+}
+
+.product-card mat-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.product-card mat-card-content p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .store-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .store-info,
+  .store-stats {
+    margin-left: 0;
+  }
+
+  .product-card {
+    flex: 0 1 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 0 1 calc(100% - 16px);
+  }
+}
+
+/* Botões com fontes melhoradas */
+.store-info button,
+.store-tabs button {
+  background-color: #5c5d5e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  /* Ajustado para melhor legibilidade */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 8px;
+}
+
+.store-info button:last-child {
+  margin-right: 0;
+}
+
+.store-info button:hover,
+.store-tabs button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.store-info button:active,
+.store-tabs button:active {
+  background-color: #003f7f;
+}
+
+.store-info button:focus,
+.store-tabs button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
