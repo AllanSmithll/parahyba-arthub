@@ -1,7 +1,6 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import Store from '../../shared/models/Store';
 import { Router } from '@angular/router';
-import { MaterialAngularModule } from '../../material-angular/material-angular.module';
 
 @Component({
   selector: 'card-store',
@@ -17,8 +16,7 @@ export class CardStoreComponent {
   }
   
   navigateToStore() {
-    // Navega para a página da loja usando o ID da loja
-    this.router.navigate(['/store', this.store?.id]);
+    this.router.navigate(['/loja', this.store?.id]);
   }
 
 }

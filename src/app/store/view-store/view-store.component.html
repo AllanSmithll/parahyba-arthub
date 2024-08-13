@@ -1,0 +1,44 @@
+<div class="store-view">
+    <mat-card class="store-header">
+    <div id="tile-store">
+        <div class="store-image">
+        <img mat-card-image [src]="store?.image" alt="{{ store?.name }}">
+    </div> 
+    <div class="store-name-box">
+        <h2 class="store-name">{{ store?.name }}</h2>
+        
+              <div class="button-box">
+                <button mat-button>+ Seguir</button>
+                <button mat-button>Chat</button>
+              </div>
+
+    </div>
+      </div>
+      <div class="store-stats">
+        <span>Produtos: {{ store?.items?.length }}</span>
+        <span>Seguidores: {{ store?.followers }}</span>
+        <span>Loja desde: {{ formatData() }}</span>
+      </div>
+    </mat-card>
+<!--   
+    <div class="store-tabs">
+      <button mat-button>Principal</button>
+      <button mat-button>Todos os Produtos</button>
+    </div> -->
+  
+    <div class="recommended-section">
+      <h1>Todos os produtos</h1>
+      <div class="recommended-products">
+        <mat-card *ngFor="let product of store?.items" class="product-card">
+          <img mat-card-image [src]="product.image" alt="{{ product.name }}">
+          <mat-card-title>{{ product.name }}</mat-card-title>
+          <mat-card-content>
+            <p>{{ product.price | currency }}</p>
+          </mat-card-content>
+        </mat-card>
+
+
+      </div>
+    </div>
+  </div>
+  

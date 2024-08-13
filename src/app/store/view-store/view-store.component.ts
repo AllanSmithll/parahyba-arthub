@@ -31,4 +31,18 @@ export class ViewStoreComponent {
     return this.storeRepository.get(id);
   }
 
+  formatData():String{
+    let formattedDate:String= ""
+    
+    if (this.store){
+      // Obtém o dia, mês e ano da data
+      const day = this.store?.shopSince.getUTCDate();
+      const month = this.store.shopSince.getUTCMonth() + 1; // +1 porque getUTCMonth() retorna valores de 0 a 11
+      const year = this.store?.shopSince.getUTCFullYear();
+      const formattedDate = `${day}/${month}/${year}`;
+      return formattedDate    
+    }  
+    
+    return formattedDate    
+  }
 }
