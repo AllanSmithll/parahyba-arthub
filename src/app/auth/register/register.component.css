@@ -1,0 +1,43 @@
+.form-group {
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+   
+  }
+.form-group input {
+  }
+
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+  
+    border-radius: 10px;
+  }
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto ;
+    height: 100vh;
+}
+  
+.main-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    color: black;
+    height: 80vh;
+  }
